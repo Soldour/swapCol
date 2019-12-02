@@ -1,0 +1,17 @@
+function ass(arr,row,col1,col2)
+{
+    let tmp=arr[row][col1]
+    arr[row][col1]=arr[row][col2]
+    arr[row][col2]=tmp
+}
+let a= [[-3,14,45,13],
+     [-4,1,19,-20],
+      [9,6,0, 21]]
+console.table(a)
+let firs_Col=2
+let sec_col=1
+for (let i=0; i<3; i++)
+{
+    ass(a,i,firs_Col,sec_col)
+}
+console.table(a)
